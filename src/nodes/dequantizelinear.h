@@ -81,7 +81,7 @@ void DequantizeLinear::print(std::ostream &dst) const {
 	if (get_number_of_inputs() == 3) {
 		dst << " - x_zero_point" << param_index;
 	}
-	dst << ") * x_scale" << param_index << " + 100;" << std::endl; // Mistake to test CI
+	dst << ") * x_scale" << param_index << ";" << std::endl;
 	INDT_1 << "}" << std::endl;
 }
 
