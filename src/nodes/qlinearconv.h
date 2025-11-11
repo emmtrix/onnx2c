@@ -30,7 +30,7 @@ namespace toC {
 									const std::string &x_idx,
 									const std::string &w_idx,
 									const std::string &y_idx) const override {
-			INDT_4 << "a += (x" << x_idx << " - (int32_t)x_zero_point[0]) * (w" << w_idx << " - (int32_t)w_zero_point[0]);" << std::endl;
+			INDT_4 << "a += ((int32_t)x" << x_idx << " - x_zero_point[0]) * ((int32_t)w" << w_idx << " - w_zero_point[0]);" << std::endl;
 		}
 
 		void print_output_cell_finalize(std::ostream &dst, const std::string &y_idx) const override {
