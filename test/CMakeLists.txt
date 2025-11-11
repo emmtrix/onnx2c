@@ -927,6 +927,8 @@ ONNX_backend_node_test(qlinearmatmul_3D_int8_float32)
 #ONNX_backend_node_test(qlinearmatmul_3D_uint8_float16)
 ONNX_backend_node_test(qlinearmatmul_3D_uint8_float32)
 
+ONNX_backend_node_test(qlinearconv)
+
 add_subdirectory(old_onnx_backend)
 
 # More end-to-end kind of tests here
