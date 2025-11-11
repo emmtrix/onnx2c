@@ -435,11 +435,8 @@ int64_t Graph::onnx_ir_version(void)
 #include "nodes/matmulinteger.h"
 #include "nodes/maxpool.h"
 #include "nodes/pad.h"
-<<<<<<< HEAD
 #include "nodes/qlinearmatmul.h"
-=======
 #include "nodes/qlinearconv.h"
->>>>>>> leh-qlinear-conv
 #include "nodes/quantizelinear.h"
 #include "nodes/randomuniform.h"
 #include "nodes/range.h"
